@@ -2,11 +2,12 @@
 
 ## About
 
-A lightweight yet powerful app for note-taking fused with a flashcards app. Developed with love for personal use,
+A lightweight yet powerful desktop app for note-taking fused with a flashcards app. Developed with love for personal use,
 but feel free to use it to your heart's content.
 
-Tech stack: Golang (latest), Vue (v3), Vue-Router (v4), TypeScript, TailwindCss
-Built with [Wails v2](https://wails.io/)
+Tech stack: Golang (latest), Vue 3, TypeScript, Vite
+
+Built with [Wails v2](https://wails.io/) as a lightweight alternative to Electron written in Go
 
 Supports [CommonMark Spec](https://spec.commonmark.org/0.29/)
 
