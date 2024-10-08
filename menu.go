@@ -77,7 +77,7 @@ func createApplicationMenu(app *App) *menu.Menu {
 		// TODO: transform selected text
 	})
 
-	// --- WindowMenu
+	// --- Window Menu
 	WindowMenu := AppMenu.AddSubmenu("Window")
 	WindowMenu.AddText("Minimize", keys.CmdOrCtrl("M"), func(_ *menu.CallbackData) {
 		wailsRuntime.WindowMinimise(app.ctx)
