@@ -1,0 +1,26 @@
+:root {
+    /* Common */
+    --primary-bg: #31363c; /* Menu panels */
+    --secondary-bg: #36393e; /* Content bg */
+
+    --primary-text-color: #a5a7a9;
+    --secondary-text-color: #3f4a54;
+
+    /* Menu */
+    --top-menu-bg: var(--primary-bg);
+    --top-menu-border-color: none;
+    --secondary-menu-bg: var(--primary-bg);
+    --secondary-menu-border-color: #3f454b;
+
+    /* Editor */
+    --editor-bg-color: #f0f0f0;
+
+    /* Flashcards */
+    --flashcard-overlay-color: #f0f0f0;
+    --flashcard-bg-color: #fff;
+    --flashcard-text-color: var(--secondary-text-color);
+    --flashcard-border-color: #dfe2e4;
+    --flashcard-action-text-color: #898989;
+    --flashcard-action-text-color-hover: #3c3c3c;
+    --flashcard-action-bg-color-hover: #f0f0f0;
+}

@@ -96,6 +96,15 @@ func createApplicationMenu(app *App) *menu.Menu {
 		wailsRuntime.WindowUnfullscreen(app.ctx)
 	})
 
+	// --- Themes Menu
+	ThemesMenu := AppMenu.AddSubmenu("Themes")
+	ThemesMenu.AddText("Axolotl - Light", nil, func(_ *menu.CallbackData) {
+		wailsRuntime.EventsEmit(app.ctx, "change-theme", "axolotl-light")
+	})
+	ThemesMenu.AddText("Scarecrow - Dark", nil, func(_ *menu.CallbackData) {
+		wailsRuntime.EventsEmit(app.ctx, "change-theme", "scarecrow-dark")
+	})
+
 	// --- Help Menu
 	HelpMenu := AppMenu.AddSubmenu("Help")
 	HelpMenu.AddText("Quick Start", nil, func(_ *menu.CallbackData) {

@@ -1,0 +1,12 @@
+:root {
+    /* Common */
+    /* --: red; */
+
+    /* Editor */
+    --editor-bg-color: #f0f0f0;
+
+    /* Flashcards */
+    --flashcard-overlay-color: blue;
+    --flashcard-bg-color: #fff;
+    
+}

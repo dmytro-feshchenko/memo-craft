@@ -7,6 +7,7 @@
             <div>Menu here 2</div>
         </div>
         <div class="content-wrapper">
+            <CardPreview/>
             <InfoPanel/>
             <TabsPanel/>
             <FileEditor/>
@@ -19,6 +20,7 @@ import SidebarPanel from './SidebarPanel.vue'
 import FileEditor from './FileEditor.vue'
 import TabsPanel from './TabsPanel.vue'
 import InfoPanel from './InfoPanel.vue'
+import CardPreview from '../modules/flashcards/components/CardPreview.vue' 
 </script>
 
 <style scoped>
@@ -29,14 +31,16 @@ import InfoPanel from './InfoPanel.vue'
 }
 .primary-menu {
     width: 50px;
-    background-color: rgba(49, 54, 60, 1);
+    background-color: var(--top-menu-bg);
+    border-top: 1px solid var(--top-menu-border-color);
+    border-right: 1px solid var(--top-menu-border-color);
     text-align: left;
-    padding-top: 30px;
+    margin-top: 30px;
 }
 .secondary-menu {
     width: 200px;
-    background-color: rgba(49, 54, 60, 1);
-    border-right: 1px solid rgba(63, 69, 75, 1);
+    background-color: var(--secondary-menu-bg);
+    border-right: 1px solid var(--secondary-menu-border-color);
     padding-top: 30px;
 }
 .content-wrapper {
