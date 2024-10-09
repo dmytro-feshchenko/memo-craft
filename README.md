@@ -51,6 +51,15 @@ For Linux only: Linux requires the standard gcc build tools plus libgtk3 and lib
 - UPX for compressing your applications.
 - NSIS for generating Windows installers.
 
+### How does it work?
+
+#### Editor
+
+I'm building inline markdown editor based on [Marked](https://marked.js.org/), which is a lightweight low-level markdown compiler.
+Also, I'm going to use [marked-highlight](https://www.npmjs.com/package/marked-highlight) package to highlight code blocks.
+
+First thing first, I transform markdown into an HTML document.
+
 ### Live Development
 
 To run in live development mode, run `wails dev` in the project directory. This will run a Vite development
