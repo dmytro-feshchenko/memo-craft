@@ -51,14 +51,38 @@ For Linux only: Linux requires the standard gcc build tools plus libgtk3 and lib
 - UPX for compressing your applications.
 - NSIS for generating Windows installers.
 
+### Todo:
+- [ ] Flashcards
+    - [ ] Card preview (in progress)
+    - [ ] Card management
+    - [ ] Central hub
+      - [ ] List of decks
+      - [ ] List of previews
+      - [ ] Queue runner
+      - [ ] [Future] Stats
+      - [ ] [Future] Configure repetition algorithm
+- [ ] Notes
+  - [ ] Basic note engine for text (in progress)
+  - [ ] Advanced note engine
+    - [ ] Code blocks (in progress)
+    - [ ] Images
+    - [ ] [Future] Embedded video
+- [ ] Settings
+  - [ ] Multi-language (in progress)
+  - [ ] Themes (in progress)
+  - [ ] Configuration (in progress)
+- [ ] Navigation
+  - [ ] File tree
+  - [ ] Tabs
+    - [ ] [Future] Store opened tabs
+  - [ ] Full-text search
+
 ### How does it work?
 
 #### Editor
 
 I'm building inline markdown editor based on [Marked](https://marked.js.org/), which is a lightweight low-level markdown compiler.
 Also, I'm going to use [marked-highlight](https://www.npmjs.com/package/marked-highlight) package to highlight code blocks.
-
-First thing first, I transform markdown into an HTML document.
 
 ### Live Development
 

@@ -1,0 +1,60 @@
+{
+    "name": "Українська",
+    "common": {
+        "confirm": "Підтвердити",
+        "cancel": "Відмінити",
+        "success": "Успіх",
+        "warning": "Увага",
+        "error": "Помилка",
+        "save": "Зберегти",
+        "update": "Видалити",
+        "none": "Нічого",
+        "second": "Секунд(а)",
+        "minute": "Хвилин(а)",
+        "hour": "Годин(а)",
+        "day": "Днів",
+        "unit_day": "d",
+        "unit_hour": "h",
+        "unit_minute": "m",
+        "unit_second": "s"
+    },
+    "preferences": {
+        "name": "Налаштунки",
+        "restore_defaults": "Повернути по-замовчуванню",
+        "general": {
+            "name": "Загальні",
+            "theme": "Тема",
+            "theme_light": "Світла",
+            "theme_dark": "Темна",
+            "theme_auto": "Авто",
+            "language": "Мова",
+            "system_lang": "Використовувати мову системи"
+        },
+        "editor": {
+            "name": "Редактор",
+            "show_linenum": "Показувати номери рядків",
+            "show_folding": "Включити згортання коду"
+        }
+    },
+    "interface": {
+        "files": "Файли",
+        "flashcards": "Флешкарти",
+        "search": "Пошук"
+    },
+    "flashcards": {
+        "status": {
+            "new": "Новий",
+            "up_to_date": "Up to date",
+            "needs_revisit": "Needs revisit"
+        },
+        "actions": {
+            "edit": "Редагувати",
+            "delete": "Видалити",
+            "show_more": "Показати більше",
+            "copy_id": "Скопіювати ID",
+            "duplicate": "Дублікат",
+            "add_to_reviews": "Додати до ревью",
+            "templates": "Шаблони"
+        }
+    }
+}

@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import AppLayout from './components/AppLayout.vue'
+import { useI18n } from 'vue-i18n'
 </script>
 
 <template>

@@ -1,0 +1,60 @@
+{
+    "name": "English",
+    "common": {
+        "confirm": "Confirm",
+        "cancel": "Cancel",
+        "success": "Success",
+        "warning": "Warning",
+        "error": "Error",
+        "save": "Save",
+        "update": "Update",
+        "none": "None",
+        "second": "Second(s)",
+        "minute": "Minute(s)",
+        "hour": "Hour(s)",
+        "day": "Day(s)",
+        "unit_day": "d",
+        "unit_hour": "h",
+        "unit_minute": "m",
+        "unit_second": "s"
+    },
+    "preferences": {
+        "name": "Preferences",
+        "restore_defaults": "Restore Defaults",
+        "general": {
+            "name": "General",
+            "theme": "Theme",
+            "theme_light": "Light",
+            "theme_dark": "Dark",
+            "theme_auto": "Auto",
+            "language": "Language",
+            "system_lang": "Use System Language"
+        },
+        "editor": {
+            "name": "Editor",
+            "show_linenum": "Show Line Numbers",
+            "show_folding": "Enable Code Folding"
+        }
+    },
+    "interface": {
+        "files": "Files",
+        "flashcards": "Flashcards",
+        "search": "Search"
+    },
+    "flashcards": {
+        "status": {
+            "new": "New",
+            "up_to_date": "Up to date",
+            "needs_revisit": "Needs revisit"
+        },
+        "actions": {
+            "edit": "Edit",
+            "delete": "Delete",
+            "show_more": "Show More",
+            "copy_id": "Copy ID",
+            "duplicate": "Duplicate",
+            "add_to_reviews": "Add to reviews",
+            "templates": "Templates"
+        }
+    }
+}

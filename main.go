@@ -2,6 +2,7 @@ package main
 
 import (
 	"embed"
+	"fmt"
 
 	"github.com/wailsapp/wails/v2"
 	"github.com/wailsapp/wails/v2/pkg/options"
@@ -21,10 +22,16 @@ func main() {
 	// Create an instance of the app structure
 	app := NewApp()
 
+	configFileStorage, err := InitNewConfigFileStorage("MemoCraft")
+    if err != nil {
+        fmt.Printf("could not initialize the config store: %v\n", err)
+        return
+    }
+
 	appMenu := createApplicationMenu(app)
 
 	// Create application with options
-	err := wails.Run(&options.App{
+	err = wails.Run(&options.App{
 		Title:             "MemoCraft Notes",
 		Menu:              appMenu,
 		Width:             1024,
@@ -40,6 +47,7 @@ func main() {
 		OnStartup:        app.startup,
 		Bind: []interface{}{
 			app,
+			configFileStorage,
 		},
 		DragAndDrop: &options.DragAndDrop{
 			EnableFileDrop:     false, // TODO: consider drag and drop functionality

@@ -15,7 +15,12 @@
       "ESNext",
       "DOM"
     ],
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/stores/*": ["./src/stores/*"],
+      "wallsjs/*": ["./wallsjs/*"]
+    },
   },
   "include": [
     "src/**/*.ts",
