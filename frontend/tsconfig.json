@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "types": ["vitest/globals"],
+    "types": ["vitest/globals", "naive-ui/volar"],
     "useDefineForClassFields": true,
     "module": "ESNext",
     "moduleResolution": "Node",

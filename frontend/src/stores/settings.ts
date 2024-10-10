@@ -4,6 +4,7 @@ import { get, set, split, cloneDeep } from 'lodash'
 import { i18nGlobal } from '@/utils/i18n.js'
 import { h, nextTick } from 'vue'
 import { enUS, NButton, NSpace, useOsTheme, zhCN } from 'naive-ui'
+import * as FileStorage from '@/../wailsjs/go/main/ConfigFileStorage'
 
 export const useSettingsStore = defineStore('settings', {
     state: () => ({
@@ -68,14 +69,17 @@ export const useSettingsStore = defineStore('settings', {
         },
 
         async loadPreferences(): Promise<void> {
-            // const { success, data } = await GetSettingsData()
-            // if (success) {
-            //     this.previousSettingsState = cloneDeep(data)
-            //     this._applyPreferences(data)
-            //     // TODO: set default values here
-            //
-            //     i18nGlobal.locale.value = this.currentLanguageCode
-            // }
+            const { success, data } = await FileStorage.Get("settings.json", "null");
+
+            console.log(success);
+            console.log(data);
+            if (success) {
+                this.previousSettingsState = cloneDeep(data)
+                // this._setPreferences(data)
+                // TODO: set default values here
+            
+                // i18nGlobal.locale.value = this.currentLanguageCode
+            }
         },
     }
 })

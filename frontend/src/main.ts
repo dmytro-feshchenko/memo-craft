@@ -15,7 +15,7 @@ dayjs.extend(relativeTime)
 // import { bind } from './events'
 // bind();
 
-createApp(App).mount('#app')
+// createApp(App).mount('#app')
 
 async function setupApp() {
     const app = createApp(App)
